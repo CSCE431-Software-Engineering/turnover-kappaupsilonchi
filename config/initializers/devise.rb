@@ -9,7 +9,10 @@
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
-    config.omniauth :google_oauth2, '129627292196-mhcutgmc7t1hri3q3g67r4dq99sv4o7q.apps.googleusercontent.com', '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', {hd: 'tamu.edu'}
+    config.omniauth :google_oauth2, '129627292196-mhcutgmc7t1hri3q3g67r4dq99sv4o7q.apps.googleusercontent.com', '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', {
+      hd: 'tamu.edu',
+      prompt: 'select_account'
+    }
   
     
   
